@@ -7,7 +7,7 @@
     <!-- custom css -->
     <link rel="stylesheet" href="style.css" />
   </head>
-  <body>
+  <body class="bg-[#f5fff6]">
     <!-- //////////////////// -->
     <!-- Header Start -->
     <header>
@@ -67,34 +67,421 @@
     <!-- //////////
      /////////////
      // main section  start -->
-    <main class="w-full h-[50vw] bg-purple-500 flex">
-      <div class="left bg-red-500 w-[80%] h-full">
-        <div class="card-1">
-          <div class="card bg-base-100 w-96 shadow-sm">
-            <figure>
-              <img
-                src="https://img.daisyui.com/images/stock/photo-1606107557195-0e29a4b5b4aa.webp"
-                alt="Shoes"
-              />
-            </figure>
-            <div class="card-body">
-              <h2 class="card-title">
-                Card Title
-                <div class="badge badge-secondary">NEW</div>
-              </h2>
-              <p>
-                A card component has a figure, a body part, and inside body
-                there are title and actions parts
-              </p>
-              <div class="card-actions justify-end">
-                <div class="badge badge-outline">Fashion</div>
-                <div class="badge badge-outline">Products</div>
+    <main class="p-5">
+      <div class="left overflow-hidden">
+        <div class="cards grid grid-cols-3 gap-4">
+          <!-- card-1 -->
+          <div class="card-1">
+            <div class="card bg-base-100 w-[350px] shadow-sm p-[32px]">
+              <div class="card1-head flex items-center justify-between">
+                <figure class="bg-[#ffe3e2] w-[60px] h-[60px]">
+                  <img
+                    class="w-[32px] h-[32px]"
+                    src="assets/emergency.png"
+                    alt=""
+                  />
+                </figure>
+                <div class="icon">
+                  <i class="fa-regular fa-heart"></i>
+                </div>
+              </div>
+              <div class="card1-body">
+                <h2 class="card-title font-bold">National Emergency Number</h2>
+                <p>National Emergency</p>
+                <p class="font-bold" style="margin-top: 15px">999</p>
+                <span
+                  class="bg-[#f2f2f2] text-center rounded-3xl pt-1 pb-1 pl-3 pr-3 mt-2"
+                >
+                  All
+                </span>
+                <div
+                  class="mt-5 text-[#5c5c5c] flex justify-between text-center"
+                >
+                  <div
+                    class="border-2 border-[#d4d6d5] w-32 h-10 pt-1 rounded-xl"
+                  >
+                    <i class="fa-regular fa-copy"></i>
+                    <span> Copy </span>
+                  </div>
+                  <div
+                    class="border-2 border-[#d4d6d5] w-1/2 h-10 pt-1 rounded-xl bg-[#00a63e] text-white"
+                  >
+                    <i class="fa-solid fa-phone"></i>
+                    <span> Call </span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- card-2 -->
+          <div class="card-2">
+            <div class="card bg-base-100 w-[350px] shadow-sm p-[32px]">
+              <div class="card1-head flex items-center justify-between">
+                <figure class="bg-[#ffe3e2] w-[60px] h-[60px]">
+                  <img
+                    class="w-[32px] h-[32px]"
+                    src="assets/police.png"
+                    alt=""
+                  />
+                </figure>
+                <div class="icon">
+                  <i class="fa-regular fa-heart"></i>
+                </div>
+              </div>
+              <div class="card1-body">
+                <h2 class="card-title font-bold">Plice Helpline Number</h2>
+                <p>Police</p>
+                <p class="font-bold" style="margin-top: 15px">999</p>
+                <span
+                  class="bg-[#f2f2f2] text-center rounded-3xl pt-1 pb-1 pl-3 pr-3 mt-2"
+                >
+                  All
+                </span>
+                <div
+                  class="mt-5 text-[#5c5c5c] flex justify-between text-center"
+                >
+                  <div
+                    class="border-2 border-[#d4d6d5] w-32 h-10 pt-1 rounded-xl"
+                  >
+                    <i class="fa-regular fa-copy"></i>
+                    <span> Copy </span>
+                  </div>
+                  <div
+                    class="border-2 border-[#d4d6d5] w-1/2 h-10 pt-1 rounded-xl bg-[#00a63e] text-white"
+                  >
+                    <i class="fa-solid fa-phone"></i>
+                    <span> Call </span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- card-3 -->
+          <div class="card-3">
+            <div class="card bg-base-100 w-[350px] shadow-sm p-[32px]">
+              <div class="card1-head flex items-center justify-between">
+                <figure class="bg-[#ffe3e2] w-[60px] h-[60px]">
+                  <img
+                    class="w-[32px] h-[32px]"
+                    src="assets/fire-service.png"
+                    alt=""
+                  />
+                </figure>
+                <div class="icon">
+                  <i class="fa-regular fa-heart"></i>
+                </div>
+              </div>
+              <div class="card1-body">
+                <h2 class="card-title font-bold">Fire Service Number</h2>
+                <p>Fire Service</p>
+                <p class="font-bold" style="margin-top: 15px">999</p>
+                <span
+                  class="bg-[#f2f2f2] text-center rounded-3xl pt-1 pb-1 pl-3 pr-3 mt-2"
+                >
+                  All
+                </span>
+                <div
+                  class="mt-5 text-[#5c5c5c] flex justify-between text-center"
+                >
+                  <div
+                    class="border-2 border-[#d4d6d5] w-32 h-10 pt-1 rounded-xl"
+                  >
+                    <i class="fa-regular fa-copy"></i>
+                    <span> Copy </span>
+                  </div>
+                  <div
+                    class="border-2 border-[#d4d6d5] w-1/2 h-10 pt-1 rounded-xl bg-[#00a63e] text-white"
+                  >
+                    <i class="fa-solid fa-phone"></i>
+                    <span> Call </span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- card-4 -->
+          <div class="card-4">
+            <div class="card bg-base-100 w-[350px] shadow-sm p-[32px]">
+              <div class="card1-head flex items-center justify-between">
+                <figure class="bg-[#ffe3e2] w-[60px] h-[60px]">
+                  <img
+                    class="w-[32px] h-[32px]"
+                    src="assets/ambulance.png"
+                    alt=""
+                  />
+                </figure>
+                <div class="icon">
+                  <i class="fa-regular fa-heart"></i>
+                </div>
+              </div>
+              <div class="card1-body">
+                <h2 class="card-title font-bold">Ambulance Service</h2>
+                <p>Ambulance</p>
+                <p class="font-bold" style="margin-top: 15px">1994-999999</p>
+                <span
+                  class="bg-[#f2f2f2] text-center rounded-3xl pt-1 pb-1 pl-3 pr-3 mt-2"
+                >
+                  All
+                </span>
+                <div
+                  class="mt-5 text-[#5c5c5c] flex justify-between text-center"
+                >
+                  <div
+                    class="border-2 border-[#d4d6d5] w-32 h-10 pt-1 rounded-xl"
+                  >
+                    <i class="fa-regular fa-copy"></i>
+                    <span> Copy </span>
+                  </div>
+                  <div
+                    class="border-2 border-[#d4d6d5] w-1/2 h-10 pt-1 rounded-xl bg-[#00a63e] text-white"
+                  >
+                    <i class="fa-solid fa-phone"></i>
+                    <span> Call </span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- card-5 -->
+          <div class="card-5">
+            <div class="card bg-base-100 w-[350px] shadow-sm p-[32px]">
+              <div class="card1-head flex items-center justify-between">
+                <figure class="bg-[#ffe3e2] w-[60px] h-[60px]">
+                  <img
+                    class="w-[32px] h-[32px]"
+                    src="assets/emergency.png"
+                    alt=""
+                  />
+                </figure>
+                <div class="icon">
+                  <i class="fa-regular fa-heart"></i>
+                </div>
+              </div>
+              <div class="card1-body">
+                <h2 class="card-title font-bold">Woman & Child Helpline</h2>
+                <p>Woman & Child Helpline</p>
+                <p class="font-bold" style="margin-top: 15px">109</p>
+                <span
+                  class="bg-[#f2f2f2] text-center rounded-3xl pt-1 pb-1 pl-3 pr-3 mt-2"
+                >
+                  All
+                </span>
+                <div
+                  class="mt-5 text-[#5c5c5c] flex justify-between text-center"
+                >
+                  <div
+                    class="border-2 border-[#d4d6d5] w-32 h-10 pt-1 rounded-xl"
+                  >
+                    <i class="fa-regular fa-copy"></i>
+                    <span> Copy </span>
+                  </div>
+                  <div
+                    class="border-2 border-[#d4d6d5] w-1/2 h-10 pt-1 rounded-xl bg-[#00a63e] text-white"
+                  >
+                    <i class="fa-solid fa-phone"></i>
+                    <span> Call </span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- card-6 -->
+          <div class="card-6">
+            <div class="card bg-base-100 w-[350px] shadow-sm p-[32px]">
+              <div class="card1-head flex items-center justify-between">
+                <figure class="bg-[#ffe3e2] w-[60px] h-[60px]">
+                  <img
+                    class="w-[32px] h-[32px]"
+                    src="assets/emergency.png"
+                    alt=""
+                  />
+                </figure>
+                <div class="icon">
+                  <i class="fa-regular fa-heart"></i>
+                </div>
+              </div>
+              <div class="card1-body">
+                <h2 class="card-title font-bold">Anti-Corruption Helpline</h2>
+                <p>Anti-Corruption</p>
+                <p class="font-bold" style="margin-top: 15px">106</p>
+                <span
+                  class="bg-[#f2f2f2] text-center rounded-3xl pt-1 pb-1 pl-3 pr-3 mt-2"
+                >
+                  All
+                </span>
+                <div
+                  class="mt-5 text-[#5c5c5c] flex justify-between text-center"
+                >
+                  <div
+                    class="border-2 border-[#d4d6d5] w-32 h-10 pt-1 rounded-xl"
+                  >
+                    <i class="fa-regular fa-copy"></i>
+                    <span> Copy </span>
+                  </div>
+                  <div
+                    class="border-2 border-[#d4d6d5] w-1/2 h-10 pt-1 rounded-xl bg-[#00a63e] text-white"
+                  >
+                    <i class="fa-solid fa-phone"></i>
+                    <span> Call </span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- card-7 -->
+          <div class="card-7">
+            <div class="card bg-base-100 w-[350px] shadow-sm p-[32px]">
+              <div class="card1-head flex items-center justify-between">
+                <figure class="bg-[#ffe3e2] w-[60px] h-[60px]">
+                  <img
+                    class="w-[32px] h-[32px]"
+                    src="assets/emergency.png"
+                    alt=""
+                  />
+                </figure>
+                <div class="icon">
+                  <i class="fa-regular fa-heart"></i>
+                </div>
+              </div>
+              <div class="card1-body">
+                <h2 class="card-title font-bold">Electricity Helpline</h2>
+                <p>Electricity Outage</p>
+                <p class="font-bold" style="margin-top: 15px">16216</p>
+                <span
+                  class="bg-[#f2f2f2] text-center rounded-3xl pt-1 pb-1 pl-3 pr-3 mt-2"
+                >
+                  All
+                </span>
+                <div
+                  class="mt-5 text-[#5c5c5c] flex justify-between text-center"
+                >
+                  <div
+                    class="border-2 border-[#d4d6d5] w-32 h-10 pt-1 rounded-xl"
+                  >
+                    <i class="fa-regular fa-copy"></i>
+                    <span> Copy </span>
+                  </div>
+                  <div
+                    class="border-2 border-[#d4d6d5] w-1/2 h-10 pt-1 rounded-xl bg-[#00a63e] text-white"
+                  >
+                    <i class="fa-solid fa-phone"></i>
+                    <span> Call </span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- card-8 -->
+          <div class="card-8">
+            <div class="card bg-base-100 w-[350px] shadow-sm p-[32px]">
+              <div class="card1-head flex items-center justify-between">
+                <figure class="bg-[#ffe3e2] w-[60px] h-[60px]">
+                  <img
+                    class="w-[32px] h-[32px]"
+                    src="assets/emergency.png"
+                    alt=""
+                  />
+                </figure>
+                <div class="icon">
+                  <i class="fa-regular fa-heart"></i>
+                </div>
+              </div>
+              <div class="card1-body">
+                <h2 class="card-title font-bold">Brac Helpline</h2>
+                <p>Brac</p>
+                <p class="font-bold" style="margin-top: 15px">16445</p>
+                <span
+                  class="bg-[#f2f2f2] text-center rounded-3xl pt-1 pb-1 pl-3 pr-3 mt-2"
+                >
+                  All
+                </span>
+                <div
+                  class="mt-5 text-[#5c5c5c] flex justify-between text-center"
+                >
+                  <div
+                    class="border-2 border-[#d4d6d5] w-32 h-10 pt-1 rounded-xl"
+                  >
+                    <i class="fa-regular fa-copy"></i>
+                    <span> Copy </span>
+                  </div>
+                  <div
+                    class="border-2 border-[#d4d6d5] w-1/2 h-10 pt-1 rounded-xl bg-[#00a63e] text-white"
+                  >
+                    <i class="fa-solid fa-phone"></i>
+                    <span> Call </span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- card-9 -->
+          <div class="card-9">
+            <div class="card bg-base-100 w-[350px] shadow-sm p-[32px]">
+              <div class="card1-head flex items-center justify-between">
+                <figure class="bg-[#ffe3e2] w-[60px] h-[60px]">
+                  <img
+                    class="w-[32px] h-[32px]"
+                    src="assets/emergency.png"
+                    alt=""
+                  />
+                </figure>
+                <div class="icon">
+                  <i class="fa-regular fa-heart"></i>
+                </div>
+              </div>
+              <div class="card1-body">
+                <h2 class="card-title font-bold">
+                  Bangladesh Railway Helpline
+                </h2>
+                <p>Bangladesh Helpline</p>
+                <p class="font-bold" style="margin-top: 15px">163</p>
+                <span
+                  class="bg-[#f2f2f2] text-center rounded-3xl pt-1 pb-1 pl-3 pr-3 mt-2"
+                >
+                  All
+                </span>
+                <div
+                  class="mt-5 text-[#5c5c5c] flex justify-between text-center"
+                >
+                  <div
+                    class="border-2 border-[#d4d6d5] w-32 h-10 pt-1 rounded-xl"
+                  >
+                    <i class="fa-regular fa-copy"></i>
+                    <span> Copy </span>
+                  </div>
+                  <div
+                    class="border-2 border-[#d4d6d5] w-1/2 h-10 pt-1 rounded-xl bg-[#00a63e] text-white"
+                  >
+                    <i class="fa-solid fa-phone"></i>
+                    <span> Call </span>
+                  </div>
+                </div>
               </div>
             </div>
           </div>
         </div>
       </div>
-      <div class="right bg-yellow-500 w-[20%] h-full"></div>
+      <div class="right pt-3 rounded-2xl">
+        <div class="left ml-3">
+          <i class="fa-regular fa-clock mr-2"></i>
+          <span class="font-bold">Call History</span>
+        </div>
+        <div>
+          <button
+            class="text-white bg-[#00a63e] pl-3 pr-3 pb-1 pt-1 rounded-3xl mr-3"
+          >
+            Clear
+          </button>
+        </div>
+      </div>
     </main>
     <!-- //////////
      /////////////
@@ -109,15 +496,15 @@
       referrerpolicy="no-referrer"
     />
 
-    <!-- Tailwind CDN -->
-    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
-
     <!-- DaisyUI -->
     <link
       href="https://cdn.jsdelivr.net/npm/daisyui@5"
       rel="stylesheet"
       type="text/css"
     />
+
+    <!-- Tailwind CDN -->
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
 
     <!-- custom script -->
     <script src="script.js"></script>
