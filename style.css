@@ -33,20 +33,6 @@ main {
   grid-template-columns: 3fr 1fr;
 }
 
-main .right {
-  background-color: white;
-  width: 20vw;
-  height: auto;
-  margin-left: 2vw;
-  display: flex;
-  justify-content: space-between;
-}
 
-main .right .left {
-  display: flex;
-  /* border: 2px solid black; */
-  /* display: block; */
-  width: auto;
-  height: 2vw;
-  align-items: center;
-}
+
+

@@ -32,13 +32,13 @@
           <li
             class="flex justify-center items-center w-[123px] h-[52px] bg-[#41ff6b1a] rounded-[50px] text-[16px] font-bold ml-5 mr-5"
           >
-            <p class="mr-2">100</p>
+            <p class="mr-2" id="money">100</p>
             <img class="w-[24px] h-[24px]" src="assets/coin.png" alt="" />
           </li>
           <li
             class="flex justify-center items-center w-[123px] h-[52px] bg-[#00a63e] rounded-[50px] text-[16px] font-bold text-white"
           >
-            <p class="mr-1">2</p>
+            <p id="zero" class="mr-1">0</p>
             <p>copy</p>
           </li>
         </ul>
@@ -69,7 +69,9 @@
      // main section  start -->
     <main class="p-5">
       <div class="left overflow-hidden">
-        <div class="cards grid grid-cols-3 gap-4">
+        <div
+          class="cards grid md:grid-cols-2 lg:grid-cols-3 sm:grid-cols-1 gap-4"
+        >
           <!-- card-1 -->
           <div class="card-1">
             <div class="card bg-base-100 w-[350px] shadow-sm p-[32px]">
@@ -86,9 +88,15 @@
                 </div>
               </div>
               <div class="card1-body">
-                <h2 class="card-title font-bold">National Emergency Number</h2>
-                <p id="calling-name">National Emergency</p>
-                <p id="calling-num" class="font-bold" style="margin-top: 15px">
+                <h2 class="card-title font-bold" id="call-header">
+                  National Emergency Number
+                </h2>
+                <p id="calling-name-1">National Emergency</p>
+                <p
+                  id="calling-num-1"
+                  class="font-bold"
+                  style="margin-top: 15px"
+                >
                   999
                 </p>
                 <span
@@ -100,13 +108,14 @@
                   class="mt-5 text-[#5c5c5c] flex justify-between text-center"
                 >
                   <div
-                    class="border-2 border-[#d4d6d5] w-32 h-10 pt-1 rounded-xl"
+                    class="copy border-2 border-[#d4d6d5] w-32 h-10 pt-1 rounded-xl"
                   >
                     <i class="fa-regular fa-copy"></i>
                     <span> Copy </span>
                   </div>
                   <div
-                    class="border-2 border-[#d4d6d5] w-1/2 h-10 pt-1 rounded-xl bg-[#00a63e] text-white call"
+                    id="call-card-1"
+                    class="border-2 border-[#d4d6d5] w-1/2 h-10 pt-1 rounded-xl bg-[#00a63e] text-white"
                   >
                     <i class="fa-solid fa-phone"></i>
                     <span> Call </span>
@@ -132,9 +141,15 @@
                 </div>
               </div>
               <div class="card1-body">
-                <h2 class="card-title font-bold">Plice Helpline Number</h2>
-                <p id="calling-name">Police</p>
-                <p id="calling-num" class="font-bold" style="margin-top: 15px">
+                <h2 class="card-title font-bold" id="call-header">
+                  Plice Helpline Number
+                </h2>
+                <p id="calling-name-2">Police</p>
+                <p
+                  id="calling-num-2"
+                  class="font-bold"
+                  style="margin-top: 15px"
+                >
                   999
                 </p>
                 <span
@@ -146,13 +161,15 @@
                   class="mt-5 text-[#5c5c5c] flex justify-between text-center"
                 >
                   <div
-                    class="border-2 border-[#d4d6d5] w-32 h-10 pt-1 rounded-xl"
+                    id="copy"
+                    class="copy border-2 border-[#d4d6d5] w-32 h-10 pt-1 rounded-xl"
                   >
                     <i class="fa-regular fa-copy"></i>
                     <span> Copy </span>
                   </div>
                   <div
-                    class="border-2 border-[#d4d6d5] w-1/2 h-10 pt-1 rounded-xl bg-[#00a63e] text-white call"
+                    id="call-card-2"
+                    class="border-2 border-[#d4d6d5] w-1/2 h-10 pt-1 rounded-xl bg-[#00a63e] text-white"
                   >
                     <i class="fa-solid fa-phone"></i>
                     <span> Call </span>
@@ -178,9 +195,15 @@
                 </div>
               </div>
               <div class="card1-body">
-                <h2 class="card-title font-bold">Fire Service Number</h2>
-                <p id="calling-name">Fire Service</p>
-                <p id="calling-num" class="font-bold" style="margin-top: 15px">
+                <h2 class="card-title font-bold" id="call-header">
+                  Fire Service Number
+                </h2>
+                <p id="calling-name-3">Fire Service</p>
+                <p
+                  id="calling-num-3"
+                  class="font-bold"
+                  style="margin-top: 15px"
+                >
                   999
                 </p>
                 <span
@@ -192,13 +215,15 @@
                   class="mt-5 text-[#5c5c5c] flex justify-between text-center"
                 >
                   <div
-                    class="border-2 border-[#d4d6d5] w-32 h-10 pt-1 rounded-xl"
+                    id="copy"
+                    class="copy border-2 border-[#d4d6d5] w-32 h-10 pt-1 rounded-xl"
                   >
                     <i class="fa-regular fa-copy"></i>
                     <span> Copy </span>
                   </div>
                   <div
-                    class="border-2 border-[#d4d6d5] w-1/2 h-10 pt-1 rounded-xl bg-[#00a63e] text-white call"
+                    id="call-card-3"
+                    class="border-2 border-[#d4d6d5] w-1/2 h-10 pt-1 rounded-xl bg-[#00a63e] text-white"
                   >
                     <i class="fa-solid fa-phone"></i>
                     <span> Call </span>
@@ -224,9 +249,15 @@
                 </div>
               </div>
               <div class="card1-body">
-                <h2 class="card-title font-bold">Ambulance Service</h2>
-                <p id="calling-name">Ambulance</p>
-                <p id="calling-num" class="font-bold" style="margin-top: 15px">
+                <h2 class="card-title font-bold" id="call-header">
+                  Ambulance Service
+                </h2>
+                <p id="calling-name-4">Ambulance</p>
+                <p
+                  id="calling-num-4"
+                  class="font-bold"
+                  style="margin-top: 15px"
+                >
                   1994-999999
                 </p>
                 <span
@@ -238,13 +269,15 @@
                   class="mt-5 text-[#5c5c5c] flex justify-between text-center"
                 >
                   <div
-                    class="border-2 border-[#d4d6d5] w-32 h-10 pt-1 rounded-xl"
+                    id="copy"
+                    class="copy border-2 border-[#d4d6d5] w-32 h-10 pt-1 rounded-xl"
                   >
                     <i class="fa-regular fa-copy"></i>
                     <span> Copy </span>
                   </div>
                   <div
-                    class="border-2 border-[#d4d6d5] w-1/2 h-10 pt-1 rounded-xl bg-[#00a63e] text-white call"
+                    id="call-card-4"
+                    class="border-2 border-[#d4d6d5] w-1/2 h-10 pt-1 rounded-xl bg-[#00a63e] text-white"
                   >
                     <i class="fa-solid fa-phone"></i>
                     <span> Call </span>
@@ -270,9 +303,15 @@
                 </div>
               </div>
               <div class="card1-body">
-                <h2 class="card-title font-bold">Woman & Child Helpline</h2>
-                <p id="calling-name">Woman & Child Helpline</p>
-                <p id="calling-num" class="font-bold" style="margin-top: 15px">
+                <h2 class="card-title font-bold" id="call-header">
+                  Woman & Child Helpline
+                </h2>
+                <p id="calling-name-5">Woman & Child Helpline</p>
+                <p
+                  id="calling-num-5"
+                  class="font-bold"
+                  style="margin-top: 15px"
+                >
                   109
                 </p>
                 <span
@@ -284,13 +323,15 @@
                   class="mt-5 text-[#5c5c5c] flex justify-between text-center"
                 >
                   <div
-                    class="border-2 border-[#d4d6d5] w-32 h-10 pt-1 rounded-xl"
+                    id="copy"
+                    class="copy border-2 border-[#d4d6d5] w-32 h-10 pt-1 rounded-xl"
                   >
                     <i class="fa-regular fa-copy"></i>
                     <span> Copy </span>
                   </div>
                   <div
-                    class="border-2 border-[#d4d6d5] w-1/2 h-10 pt-1 rounded-xl bg-[#00a63e] text-white call"
+                    id="call-card-5"
+                    class="border-2 border-[#d4d6d5] w-1/2 h-10 pt-1 rounded-xl bg-[#00a63e] text-white"
                   >
                     <i class="fa-solid fa-phone"></i>
                     <span> Call </span>
@@ -316,9 +357,15 @@
                 </div>
               </div>
               <div class="card1-body">
-                <h2 class="card-title font-bold">Anti-Corruption Helpline</h2>
-                <p id="calling-name">Anti-Corruption</p>
-                <p id="calling-num" class="font-bold" style="margin-top: 15px">
+                <h2 class="card-title font-bold" id="call-header">
+                  Anti-Corruption Helpline
+                </h2>
+                <p id="calling-name-6">Anti-Corruption</p>
+                <p
+                  id="calling-num-6"
+                  class="font-bold"
+                  style="margin-top: 15px"
+                >
                   106
                 </p>
                 <span
@@ -330,13 +377,15 @@
                   class="mt-5 text-[#5c5c5c] flex justify-between text-center"
                 >
                   <div
-                    class="border-2 border-[#d4d6d5] w-32 h-10 pt-1 rounded-xl"
+                    id="copy"
+                    class="copy border-2 border-[#d4d6d5] w-32 h-10 pt-1 rounded-xl"
                   >
                     <i class="fa-regular fa-copy"></i>
                     <span> Copy </span>
                   </div>
                   <div
-                    class="border-2 border-[#d4d6d5] w-1/2 h-10 pt-1 rounded-xl bg-[#00a63e] text-white call"
+                    id="call-card-6"
+                    class="border-2 border-[#d4d6d5] w-1/2 h-10 pt-1 rounded-xl bg-[#00a63e] text-white"
                   >
                     <i class="fa-solid fa-phone"></i>
                     <span> Call </span>
@@ -362,9 +411,15 @@
                 </div>
               </div>
               <div class="card1-body">
-                <h2 class="card-title font-bold">Electricity Helpline</h2>
-                <p id="calling-name">Electricity Outage</p>
-                <p id="calling-num" class="font-bold" style="margin-top: 15px">
+                <h2 class="card-title font-bold" id="call-header">
+                  Electricity Helpline
+                </h2>
+                <p id="calling-name-7">Electricity Outage</p>
+                <p
+                  id="calling-num-7"
+                  class="font-bold"
+                  style="margin-top: 15px"
+                >
                   16216
                 </p>
                 <span
@@ -376,13 +431,15 @@
                   class="mt-5 text-[#5c5c5c] flex justify-between text-center"
                 >
                   <div
-                    class="border-2 border-[#d4d6d5] w-32 h-10 pt-1 rounded-xl"
+                    id="copy"
+                    class="copy border-2 border-[#d4d6d5] w-32 h-10 pt-1 rounded-xl"
                   >
                     <i class="fa-regular fa-copy"></i>
                     <span> Copy </span>
                   </div>
                   <div
-                    class="border-2 border-[#d4d6d5] w-1/2 h-10 pt-1 rounded-xl bg-[#00a63e] text-white call"
+                    id="call-card-7"
+                    class="border-2 border-[#d4d6d5] w-1/2 h-10 pt-1 rounded-xl bg-[#00a63e] text-white"
                   >
                     <i class="fa-solid fa-phone"></i>
                     <span> Call </span>
@@ -408,9 +465,15 @@
                 </div>
               </div>
               <div class="card1-body">
-                <h2 class="card-title font-bold">Brac Helpline</h2>
-                <p id="calling-name">Brac</p>
-                <p id="calling-num" class="font-bold" style="margin-top: 15px">
+                <h2 class="card-title font-bold" id="call-header">
+                  Brac Helpline
+                </h2>
+                <p id="calling-name-8">Brac</p>
+                <p
+                  id="calling-num-8"
+                  class="font-bold"
+                  style="margin-top: 15px"
+                >
                   16445
                 </p>
                 <span
@@ -422,13 +485,15 @@
                   class="mt-5 text-[#5c5c5c] flex justify-between text-center"
                 >
                   <div
-                    class="border-2 border-[#d4d6d5] w-32 h-10 pt-1 rounded-xl"
+                    id="copy"
+                    class="copy border-2 border-[#d4d6d5] w-32 h-10 pt-1 rounded-xl"
                   >
                     <i class="fa-regular fa-copy"></i>
                     <span> Copy </span>
                   </div>
                   <div
-                    class="border-2 border-[#d4d6d5] w-1/2 h-10 pt-1 rounded-xl bg-[#00a63e] text-white call"
+                    id="call-card-8"
+                    class="border-2 border-[#d4d6d5] w-1/2 h-10 pt-1 rounded-xl bg-[#00a63e] text-white"
                   >
                     <i class="fa-solid fa-phone"></i>
                     <span> Call </span>
@@ -454,11 +519,15 @@
                 </div>
               </div>
               <div class="card1-body">
-                <h2 class="card-title font-bold">
+                <h2 class="card-title font-bold" id="call-header">
                   Bangladesh Railway Helpline
                 </h2>
-                <p id="calling-name">Bangladesh Helpline</p>
-                <p id="calling-num" class="font-bold" style="margin-top: 15px">
+                <p id="calling-name-9">Bangladesh Helpline</p>
+                <p
+                  id="calling-num-9"
+                  class="font-bold"
+                  style="margin-top: 15px"
+                >
                   163
                 </p>
                 <span
@@ -470,13 +539,14 @@
                   class="mt-5 text-[#5c5c5c] flex justify-between text-center"
                 >
                   <div
-                    class="border-2 border-[#d4d6d5] w-32 h-10 pt-1 rounded-xl"
+                    class="copy border-2 border-[#d4d6d5] w-32 h-10 pt-1 rounded-xl"
                   >
                     <i class="fa-regular fa-copy"></i>
                     <span> Copy </span>
                   </div>
                   <div
-                    class="border-2 border-[#d4d6d5] w-1/2 h-10 pt-1 rounded-xl bg-[#00a63e] text-white call"
+                    id="call-card-9"
+                    class="border-2 border-[#d4d6d5] w-1/2 h-10 pt-1 rounded-xl bg-[#00a63e] text-white"
                   >
                     <i class="fa-solid fa-phone"></i>
                     <span> Call </span>
@@ -487,18 +557,22 @@
           </div>
         </div>
       </div>
-      <div class="right pt-3 rounded-2xl">
-        <div class="left ml-3">
-          <i class="fa-regular fa-clock mr-2"></i>
-          <span class="font-bold">Call History</span>
+      <div class="right pt-3 rounded-2xl pl-5 pr-5 bg-[#b6b5b52d]">
+        <div class="header flex justify-between">
+          <div class="call-history flex items-center">
+            <i class="fa-regular fa-clock"></i>
+            <p class="font-bold ml-3">Call History</p>
+          </div>
+          <div class="clearBtn">
+            <button
+              id="clear"
+              class="font-bold bg-[#00a63e] text-white rounded-3xl pt-1 pb-1 pl-4 pr-4"
+            >
+              Clear
+            </button>
+          </div>
         </div>
-        <div>
-          <button
-            class="text-white bg-[#00a63e] pl-3 pr-3 pb-1 pt-1 rounded-3xl mr-3"
-          >
-            Clear
-          </button>
-        </div>
+        <div id="history-added" class="footer mt-5"></div>
       </div>
     </main>
     <!-- //////////
